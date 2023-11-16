@@ -34,7 +34,7 @@ public class Mover : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             _rigidbody.velocity = new Vector2(_speed, 0);
             _rigidbody.AddForce(Vector2.up * _tapForce, ForceMode2D.Force);
